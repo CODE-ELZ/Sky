@@ -351,15 +351,15 @@
   #header {
     flex-direction: column;
   }
-  #nav-bar ul {
+  #navbar ul {
     width: 100%;
     justify-content: center;
     align-items: center;
   }
-  #nav-bar ul li {
+  #navbar ul li {
     flex: 1 1 100%;
   }
-  .nav-link {
+  .navLink {
     display: block;
     padding: 5px 10px;
   }
