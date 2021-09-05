@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap");
+
+:root {
+  --bodyColor: #fbfcfc;
+  --mainColor: #2C394B;
+  --zeroColor: #f7f312;
+  --betaColor: #daeef8;
+  --firstColor: #fc4a2aea;
+  --secondColor: #c5d5ec;
+  --thirdColor: #313131;
+}
+
+::selection {
+  background-color: var(--thirdColor);
+  color: var(--mainColor);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Josefin Sans", sans-serif;
+    background-color: var(--mainColor);
+  }
+  .containers {
+    padding: 3% 10% 0;
+    /* min-height: 100%;
+    max-width: 85%;
+    margin: 0 auto; */
+    /* margin: 0; */
+    background-color: var(--secondColor);
+  }
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#header, #navbar ul, .section, .section__form, .section-video, .cards-container, .cardd, .cardh {
+  display: flex;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--mainColor);
+    color: var(--betaColor);
+    /* box-shadow: 0px -0px 35px 5px var(--zeroColor); */
+  }
+  
+  #logo {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 50px;
+    margin-right: 80px;
+  }
+  .logo i {
+    font-size: 3.5rem;
+    color: var(--zeroColor);
+  }
+  .logo span {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -3px;
+  }
+
+  #navbar ul {
+    width: 50%;
+    justify-content: space-around;
+    list-style: none;
+  }
+  #navbar ul li {
+    margin: 0px 20px;
+  }
+
+
+  .navLink{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--zeroColor);
+    transition: all 0.50s ease;
+  }
+  .navLink:hover{
+    color: var(--betaColor);
+    border-bottom: 1px var(--zeroColor) solid;
+    letter-spacing:2px;
+  }
+    /* ---cards--- */
+    .cardh {
+      margin: 0 10px;
+      padding: 25px 10px;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: var(--mainColor);
+      color: var(--secondColor);
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.16);
+      transition: all 0.25s ease;
+      text-align: center;
+    }
+    .cardh:hover {
+      padding: 25px;
+      background-color: var(--zeroColor);
+      color: var(--thirdColor);
+    }
+  .cardh__logo img{
+    height: 80%;
+    width: 80%;
+    margin-left: 5%;
+  }
+  
+  .cardh__title {
+    margin-top: 3px;
+    font-size: 1,7rem;
+    font-weight: 700;
+  }
+  .cardh__prices {
+    margin: 10px 0px;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .cardh__prices::after {
+    /* content: "$"; */
+    font-size: 0.7rem;
+  }
+  .cardh__info {
+    margin: 10px 30px 35px;
+    text-align: center;
+  }
+  .cardh__btn {
+    margin-bottom: 10px;
+    padding: 9px 18px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: var(--zeroColor);
+    color: var(--mainColor);
+    border-radius: 32px;
+    transition: all 0.15s ease;
+  }
+  .cardh:hover .cardh__btn {
+    background-color: var(--mainColor);
+    color: var(--zeroColor);
+  }
+  .cardh__btn:hover {
+    letter-spacing: 2px;
+    color: var(--secondColor);
+  }
+  /* ---cardds--- */
+  .cardd {
+    margin: 0 10px;
+    padding: 25px 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--zeroColor);
+    color: var(--thirdColor);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.16);
+    transition: all 0.25s ease;
+    text-align: center;
+  }
+  .cardd:hover {
+    padding: 25px;
+    background-color: var(--mainColor);
+    color: var(--secondColor);
+  }
+
+.cardd__logo img{
+  height: 80%;
+  width: 80%;
+  margin-left: 5%;
+}
+
+.cardd__title {
+  margin-top: 3px;
+  font-size: 1,7rem;
+  font-weight: 700;
+}
+.cardd__prices {
+  margin: 10px 0px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.cardd__prices::after {
+  /* content: "$"; */
+  font-size: 0.7rem;
+}
+.cardd__info {
+  margin: 10px 30px 35px;
+  text-align: center;
+}
+.cardd__btn {
+  margin-bottom: 10px;
+  padding: 9px 18px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: var(--mainColor);
+  color: var(--zeroColor);
+  border-radius: 32px;
+  transition: all 0.15s ease;
+}
+.cardd:hover .cardd__btn {
+  background-color: var(--zeroColor);
+  color: var(--mainColor);
+}
+.cardd__btn:hover {
+  letter-spacing: 2px;
+  color: var(--secondColor);
+}
+
+  /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  /* ---main--- */
+/* ---section--- */
+.section-container {
+    padding-top: 100px;
+  }
+  .section {
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--secondColor);
+    color: var(--mainColor);
+  }
+  .section i {
+    font-size: 4.5rem;
+    color: var(--zeroColor);
+  }
+  .section__title {
+    margin: 10px;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    color: var(--mainColor);
+  }
+  .section__paragraph {
+    margin: 0px 50px;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.3;
+  }
+    /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  /* ---section-video--- */
+.section-video {
+  margin: 100px 10px 0;
+  padding: 10px;
+  justify-content: center;
+}
+#video {
+  height: 300px;
+  width: 600px;
+}
+  /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  /* ---section-form--- */
+  .section__form {
+    margin: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .section__form-title {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+  }
+  .section__form-title::after {
+    content: "!";
+    font-size: 1.3rem;
+  }
+  .section__form-title::before {
+    content: "¡";
+    font-size: 1.3rem;
+  }
+  #email {
+    width: 100%;
+    margin: 5px 0px 10px 0px;
+    padding: 4px;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+    border: none;
+    border: solid 1px var(--secondColor);
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.15s ease;
+  }
+  #email:focus {
+    border-color: var(--zeroColor);
+    box-shadow: 0px 0px 2px var(--zeroColor);
+  }
+  #submit {
+    width: 50%;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: var(--mainColor);
+    color: var(--zeroColor);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  #submit:hover {
+    background-color: var(--betaColor);
+    color: var(--mainColor);
+    box-shadow: 0px 0px 2px var(--mainColor);
+  }
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ---footer--- */
+.footer {
+  margin-top: 50px;
+  padding: 15px;
+  text-align: center;
+  background-color: var(--zeroColor);
+}
+.footer__text {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: var(--mainColor);
+  cursor: default;
+  transition: all 0.25s ease;
+}
+.footer__text:hover {
+  letter-spacing: 2px;
+  color: var(--secondColor);
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ---media-queries--- */
+@media only screen and (max-width: 768px) {
+  /* ---container--- */
+  .container {
+    max-width: 100%;
+  }
+  /* ---header--- */
+  #header {
+    flex-direction: column;
+  }
+  #nav-bar ul {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #nav-bar ul li {
+    flex: 1 1 100%;
+  }
+  .nav-link {
+    display: block;
+    padding: 5px 10px;
+  }
+  /* ---main--- */
+  /* ---section--- */
+  .section i {
+    font-size: 4rem;
+  }
+  .section__title {
+    margin: 5px;
+    font-size: 3rem;
+  }
+  .section__paragraph {
+    margin: 0px 10px;
+    font-size: 1.1rem;
+  }
+  /* ---section-form--- */
+  .section__form {
+    margin: 20px;
+  }
+  .section__form-title {
+    font-size: 1rem;
+  }
+  #email {
+    padding: 3px;
+    font-size: 0.8rem;
+  }
+  #submit {
+    padding: 8px;
+    font-size: 1rem;
+  }
+  /* ---cards--- */
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cardh {
+    width: 60%;
+    margin: 10px 20px;
+  }
+  .cardh:hover {
+    padding: 25px 10px;
+    background-color: var(--mainColor);
+    color: var(--secondColor);
+  }
+  .cardh__title {
+    font-size: 1.3rem;
+  }
+  .cardh__info {
+    margin: 10px 40px 35px;
+  }
+  .cardh__btn {
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+
+/* ////////////////////////////////////////////////////// */
+.cardd {
+  width: 60%;
+  margin: 10px 20px;
+}
+.cardd:hover {
+  padding: 25px 10px;
+  background-color: var(--zeroColor);
+  color: var(--thirdColor);
+}
+.cardd__title {
+  font-size: 1.3rem;
+}
+.cardd__info {
+  margin: 10px 40px 35px;
+}
+.cardd__btn {
+  padding: 8px 16px;
+  font-size: 1rem;
+}
+}
+
+@media only screen and (max-width: 468px) {
+  /* ---main--- */
+  /* ---section--- */
+  .section i {
+    font-size: 3.5rem;
+  }
+  .section__title {
+    font-size: 2.5rem;
+  }
+  .section__paragraph {
+    margin: 0px 5px;
+    font-size: 1rem;
+  }
+  /* ---section-video--- */
+  #video {
+    height: 200px;
+    width: 300px;
+  }
+  /* ---cards--- */
+  .cardh {
+    width: 80%;
+  }
+  .cardd {
+    width: 80%;
+  }
+}
