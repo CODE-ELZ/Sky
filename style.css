@@ -58,8 +58,8 @@
   }
 
   .logo {
-    margin-left: 50px;
-    margin-right: 80px;
+    margin-left: 14.52%;
+    margin-right: 14.52%;
   }
   .logo i {
     font-size: 3.5rem;
@@ -75,9 +75,10 @@
     width: 50%;
     justify-content: space-around;
     list-style: none;
+    padding: 0;
   }
   #navbar ul li {
-    margin: 0px 20px;
+    margin: 0px 8%;
   }
 
 
@@ -439,7 +440,7 @@
 }
 }
 
-@media only screen and (max-width: 468px) {
+@media only screen and (max-width: 354px) {
   /* ---main--- */
   /* ---section--- */
   .section i {
