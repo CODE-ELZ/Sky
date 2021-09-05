@@ -234,7 +234,7 @@
   }
   .section i {
     font-size: 4.5rem;
-    color: var(--zeroColor);
+    color: var(--firstColor);
   }
   .section__title {
     margin: 10px;
