@@ -111,6 +111,21 @@
       background-color: var(--zeroColor);
       color: var(--thirdColor);
     }
+    .cad1:hover {
+      box-shadow: -21px 14px 5px 0px rgba(35,47,63,0.75);
+-webkit-box-shadow: -21px 14px 5px 0px rgba(35,47,63,0.75);
+-moz-box-shadow: -21px 14px 5px 0px rgba(35,47,63,0.75);
+    }
+    .cad2:hover {
+      box-shadow: 0px 0px 22px 3px rgba(247,243,18,0.75);
+-webkit-box-shadow: 0px 0px 22px 3px rgba(247,243,18,0.75);
+-moz-box-shadow: 0px 0px 22px 3px rgba(247,243,18,0.75);
+    }
+    .cad3:hover {
+      box-shadow: 21px 14px 5px 0px rgba(35,47,63,0.75);
+-webkit-box-shadow: 21px 14px 5px 0px rgba(35,47,63,0.75);
+-moz-box-shadow: 21px 14px 5px 0px rgba(35,47,63,0.75);
+    }
   .cardh__logo img{
     height: 80%;
     width: 80%;
@@ -134,6 +149,12 @@
   .cardh__info {
     margin: 10px 30px 35px;
     text-align: center;
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+  }
+  .cardh:hover .cardh__info{
+    overflow: auto;
   }
   .cardh__btn {
     margin-bottom: 10px;
